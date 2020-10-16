@@ -481,7 +481,7 @@ export default class RNPickerSelect extends PureComponent {
         const { selectedItem } = this.state;
 
         return (
-            <TouchableOpacity
+            <View
                 testID="android_touchable_wrapper"
                 onPress={onOpen}
                 activeOpacity={1}
@@ -504,7 +504,7 @@ export default class RNPickerSelect extends PureComponent {
                         {this.renderPickerItems()}
                     </Picker>
                 </View>
-            </TouchableOpacity>
+            </View>
         );
     }
 
